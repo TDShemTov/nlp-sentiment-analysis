@@ -33,4 +33,4 @@ Out ensemble mdel will help classify reviews without relying on ratings. Providi
 <img src="images/ensemble_CM.png width="600"/>
 
 ## Conclusion
-The differences in results between the logistic regression model and the ensemble model were minimal. Their metrics, including precision, recall, and F1 score, were very close. Due to the longer runtime required to train the ensemble model, logistic regression is a better choice for a company looking for a cost-efficient model
+The performance difference between the logistic regression and ensemble model were minimal, with metrics such as precision, recall, and F1 score showing a 1% advantage for the ensemble method. Despite this, the longer training time required by the ensemble model suggests that logistic regression is a better choice for companies prioritizing runtime efficiency. Though further methods, such as implementing grid search for SVC and hyperparameter tuning for LR, could potentially tilt the favor towards the ensemble model.
