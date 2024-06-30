@@ -1,4 +1,5 @@
-# Sentiment Analysis for Amazon Reviews Using Voting Classifier Ensemble Method
+# Sentiment Analysis of Amazon Reviews With Ensemble Method
+
 ## Project Overview
 In this project, we'll classify the sentiment of Amazon reviews. We'll use NLP preprocessing and TF-IDF to extract features and then create a VotingClassifier ensemble model to determine review sentiment
 Out ensemble mdel will help classify reviews without relying on ratings. Providing insight into whether a customer is happy or not
@@ -9,28 +10,28 @@ Out ensemble mdel will help classify reviews without relying on ratings. Providi
 
 ## Intro to Dataset
 - Prior to balacing the dataset
-<img src="images/unbalanced_dataset.png width="600"/>
+<img src="images/unbalanced_dataset.png" width="600"/>
 
 - After balacing the dataset, keeping the difference of 1 star and 2 star reviews
-<img src="images/balanced_datasett.png width="600"/>
+<img src="images/balanced_dataset.png" width="600"/>
 
 ## NLP Preprocessing
 - These are some of the steps done for the NLP preprocessing, to see all, check `'amaRev.ipynb'`
 
-<img src="images/NLP_basic_visualizer.png width="600"/>
+<img src="images/NLP_basic_visualizer.png" width="600"/>
 
 ## TF-IDF for Feature Extraction
-<img src="images/TF-IDF_explanation.png width="600"/>
+<img src="images/TF-IDF_explanation.png" width="600"/>
 
 ### Examples of Feature Frequency
-<img src="images/frequency_top_20.png width="600"/>
+<img src="images/frequency_top_20.png" width="600"/>
 
 ## Models Results
 - Logistic Regression
-<img src="images/lr_CM.png width="600"/>
+<img src="images/lr_CM.png" width="600"/>
 
 - Ensemble Model
-<img src="images/ensemble_CM.png width="600"/>
+<img src="images/ensemble_CM.png" width="600"/>
 
 ## Conclusion
-The performance difference between the logistic regression and ensemble model were minimal, with metrics such as precision, recall, and F1 score showing a 1% advantage for the ensemble method. Despite this, the longer training time required by the ensemble model suggests that logistic regression is a better choice for companies prioritizing runtime efficiency. Though further methods, such as implementing grid search for SVC and hyperparameter tuning for LR, could potentially tilt the favor towards the ensemble model.
+The performance difference between the logistic regression and ensemble model were minimal, with metrics such as precision, recall, and F1 score showing a 1% advantage for the ensemble method. Despite this, the longer training time required by the ensemble model indicates that logistic regression is a better choice for companies prioritizing runtime efficiency. Though further methods, such as implementing grid search for SVC and hyperparameter tuning for LR, could potentially tilt the favor towards the ensemble model.
