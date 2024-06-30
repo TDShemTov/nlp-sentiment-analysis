@@ -22,6 +22,9 @@ Out ensemble mdel will help classify reviews without relying on ratings. Providi
 ## TF-IDF for Feature Extraction
 <img src="images/TF-IDF_explanation.png width="600"/>
 
+### Examples of Feature Frequency
+<img src="images/frequency_top_20.png width="600"/>
+
 ## Models Results
 - Logistic Regression
 <img src="images/lr_CM.png width="600"/>
