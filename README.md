@@ -33,5 +33,19 @@ Out ensemble mdel will help classify reviews without relying on ratings. Providi
 - Ensemble Model
 <img src="images/ensemble_CM.png" width="600"/>
 
-## Conclusion
-The performance difference between the logistic regression and ensemble model were minimal, with metrics such as precision, recall, and F1 score showing a 1% advantage for the ensemble method. Despite this, the longer training time required by the ensemble model indicates that logistic regression is a better choice for companies prioritizing runtime efficiency. Though further methods, such as implementing grid search for SVC and hyperparameter tuning for LR, could potentially tilt the favor towards the ensemble model.
+# Conclusion
+
+### Logistic Regression VS Ensemble Model
+The performance difference between the logistic regression and ensemble model were minimal, with metrics such as precision, recall, and F1 score showing a 1% advantage for the ensemble method. Despite this, the longer training time required by the ensemble model indicates that logistic regression is a better choice for companies prioritizing runtime efficiency
+
+### Addressing Stopwords
+Attempting to preserve sentiment in the reviews, we retained negation words in our analysis. However, this resulted in the word 'not' becoming the most frequently used term in our vocabulary, as shown in the 'Frequency Distribution of Top 20 Tokens.' The high frequency of 'not' indicates that we should remove it to improve model performance, while other negation words can still retain important meaning
+
+### TF-IDF Optimization
+- `'min_df'` - We've removed words that appear in less than 1% of our documents to potentially prevent overfitting and to handle words that are too rare to make an impact
+- `'max_features'` - Based on experimentaion, I found that setting `max_features` to 20,000 words is generating the best results. This experimentation was done with consideration to the changes `min_df` had brought to the vocabulary
+
+### What can be done to improve this project
+- Running a grid search on the SVC and hyperparameter tuning on both the Logistic Regression and ensemble models can further improve their performance
+- Implementing a deep learning model such as RNN can improve the accuracy of the sentiment analysis
+- While TF-IDF is fitting for this project well, it does have limitations in capturing relationships between words. To improve the analysis, incorporating word embeddings can extract better information by using contextual and semantic similarities of words
