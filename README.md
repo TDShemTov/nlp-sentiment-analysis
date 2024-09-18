@@ -1,8 +1,9 @@
 # Sentiment Analysis of Amazon Reviews With Ensemble Method
 
 ## Project Overview
-In this project, we'll classify the sentiment of Amazon reviews. We'll use NLP preprocessing and TF-IDF to extract features and then create a VotingClassifier ensemble model to determine review sentiment
-Out ensemble mdel will help classify reviews without relying on ratings. Providing insight into whether a customer is happy or not
+In this project, we'll classify the sentiments of Amazon reviews. We'll use NLP preprocessing and TF-IDF to extract features and then create a VotingClassifier ensemble model to determine review sentiment.
+
+Our ensemble model will help classify reviews without relying on ratings, providing insight into whether a customer is happy or not.
 
 ## Note
 - Please review the `'amaRev.ipynb'` first. It has all of the details and reasoning explained thoroughly.
